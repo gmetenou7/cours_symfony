@@ -4,9 +4,29 @@ controllers:
         namespace: App\Controller
     type: attribute
 
-
+#system de route
 #app_default: 
 #    path: /default
 #    controller: App\Controller\DefaultController::index
 #    methods:
+
+#gestion des redirections de route
+#admin:
+    #path: /wp-admin
+    #controller: Symfony\Bundle\FrameworkBundle\Controller\RedirectController::redirectAction
+    #defaults:
+        #route: sonata_admin_dashboard
+        # make a permanent redirection...
+        #permanent: true
+        # ...and keep the original query string parameters
+        #keepQueryParams: true
+
+#gestion des redirections d'url
+#homepage:
+    #path: /
+    #controller: Symfony\Bundle\FrameworkBundle\Controller\RedirectController::urlRedirectAction
+    #defaults:
+        #path: /app
+        #permanent: true
+
     
